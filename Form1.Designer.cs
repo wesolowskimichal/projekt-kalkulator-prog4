@@ -68,7 +68,6 @@
             this.label_res_small.Size = new System.Drawing.Size(372, 48);
             this.label_res_small.TabIndex = 0;
             this.label_res_small.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label_res_small.Click += new System.EventHandler(this.label_res_small_Click);
             // 
             // label_first
             // 
@@ -444,7 +443,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Kalkulator";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Activated += new System.EventHandler(this.Form1_Activated);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
