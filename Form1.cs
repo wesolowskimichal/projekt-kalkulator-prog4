@@ -36,18 +36,23 @@ namespace Kalkulator_Michal_Wesolowski
             if (label_res_small.Text.Length != 0)
             {
                 char oper = label_res_small.Text[label_res_small.Text.Length - 1];
-                
+
                 if (oper == '+')
                     res = MyMath.add(label_res_small.Text.Substring(0, label_res_small.Text.Length - 1), label_first.Text);
-                
-                if (oper == '-') 
+
+                else if (oper == '-')
                     res = MyMath.substract(label_res_small.Text.Substring(0, label_res_small.Text.Length - 1), label_first.Text);
-  
-                if (oper == '*')
+
+                else if (oper == '*')
                     res = MyMath.multiply(label_res_small.Text.Substring(0, label_res_small.Text.Length - 1), label_first.Text);
-                
-                if (oper == '/') res = "123";
-            }
+
+                else if (oper == '/')
+                {
+                    res = MyMath.divide(label_res_small.Text.Substring(0, label_res_small.Text.Length - 1), label_first.Text);
+                    if (res.Equals("Division by 0 error"))
+                        turn_button(false);
+                }
+                }
             else res = label_first.Text;
             label_res_small.Text = res + button.Text;
             label_first.Text = "0";
@@ -70,14 +75,17 @@ namespace Kalkulator_Michal_Wesolowski
                 if (oper == '*')
                     res = MyMath.multiply(label_res_small.Text.Substring(0, label_res_small.Text.Length - 1), label_first.Text);
 
-                if (oper == '/') res = "123";
+                if (oper == '/') {
+                    res = MyMath.divide(label_res_small.Text.Substring(0, label_res_small.Text.Length - 1), label_first.Text);
+                    if (res.Equals("Division by 0 error")) 
+                        turn_button(false);
+                }
                 String op = label_res_small.Text.ToString() + label_first.Text.ToString() + " = " + res, op1 = op[0].ToString();
                 for(int i=1; i < op.Length; i++)
                 {
                     if (i % 25 == 0) op1 += '\n';
                     else op1 += op[i];
                 }
-                listView_history.Items.Insert(0, op1);
                 label_res_small.Text = "";
                 label_first.Text = res;
                 shrink_text();
@@ -92,8 +100,33 @@ namespace Kalkulator_Michal_Wesolowski
             shrink_text();
         }
 
+        private void turn_button(bool state)
+        {
+            button_0.Enabled = state;
+            button_1.Enabled = state;
+            button_2.Enabled = state;
+            button_3.Enabled = state;
+            button_4.Enabled = state;
+            button_5.Enabled = state;
+            button_6.Enabled = state;
+            button_7.Enabled = state;
+            button_8.Enabled = state;
+            button_9.Enabled = state;
+            button_add.Enabled = state;
+            button_comma.Enabled = state;
+            button_del.Enabled = state;
+            button_div.Enabled = state;
+            button_mult.Enabled = state;
+            button_pow.Enabled = state;
+            button_res.Enabled = state;
+            button_rev.Enabled = state;
+            button_sub.Enabled = state;
+            if (state) refocus();
+        }
+
         private void button_CE_Click(object sender, EventArgs e)
         {
+            turn_button(true);
             label_res_small.Text = "";
             label_first.Text = "0";
             shrink_text();
@@ -226,6 +259,7 @@ namespace Kalkulator_Michal_Wesolowski
         private void Form1_Activated(object sender, EventArgs e)
         {
             refocus();
+
         }
     }
 }

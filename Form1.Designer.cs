@@ -52,15 +52,10 @@
             this.button_div = new System.Windows.Forms.Button();
             this.button_mult = new System.Windows.Forms.Button();
             this.label_Temp = new System.Windows.Forms.Label();
-            this.listView_history = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label_res_small
             // 
-            this.label_res_small.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_res_small.BackColor = System.Drawing.Color.Gainsboro;
             this.label_res_small.Font = new System.Drawing.Font("Franklin Gothic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_res_small.Location = new System.Drawing.Point(0, 29);
@@ -71,9 +66,6 @@
             // 
             // label_first
             // 
-            this.label_first.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label_first.BackColor = System.Drawing.Color.Gainsboro;
             this.label_first.Font = new System.Drawing.Font("Franklin Gothic Medium", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_first.Location = new System.Drawing.Point(0, 77);
@@ -96,9 +88,6 @@
             // 
             // button_0
             // 
-            this.button_0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_0.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_0.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_0.Location = new System.Drawing.Point(106, 474);
@@ -136,9 +125,6 @@
             // 
             // button_pow
             // 
-            this.button_pow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_pow.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_pow.Location = new System.Drawing.Point(12, 154);
             this.button_pow.Name = "button_pow";
@@ -150,9 +136,6 @@
             // 
             // button_sub
             // 
-            this.button_sub.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_sub.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_sub.Location = new System.Drawing.Point(297, 312);
             this.button_sub.Name = "button_sub";
@@ -175,9 +158,6 @@
             // 
             // button_1
             // 
-            this.button_1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_1.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_1.Location = new System.Drawing.Point(12, 393);
@@ -192,9 +172,6 @@
             // 
             // button_2
             // 
-            this.button_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_2.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_2.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_2.Location = new System.Drawing.Point(106, 393);
@@ -223,9 +200,6 @@
             // 
             // button_4
             // 
-            this.button_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_4.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_4.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_4.Location = new System.Drawing.Point(11, 312);
@@ -240,9 +214,6 @@
             // 
             // button_5
             // 
-            this.button_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_5.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_5.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_5.Location = new System.Drawing.Point(106, 312);
@@ -257,9 +228,6 @@
             // 
             // button_6
             // 
-            this.button_6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_6.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_6.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_6.Location = new System.Drawing.Point(200, 312);
@@ -274,9 +242,6 @@
             // 
             // button_7
             // 
-            this.button_7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_7.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_7.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_7.Location = new System.Drawing.Point(12, 231);
@@ -291,9 +256,6 @@
             // 
             // button_8
             // 
-            this.button_8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_8.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_8.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_8.Location = new System.Drawing.Point(106, 231);
@@ -308,9 +270,6 @@
             // 
             // button_9
             // 
-            this.button_9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_9.BackColor = System.Drawing.Color.LightSlateGray;
             this.button_9.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_9.Location = new System.Drawing.Point(200, 231);
@@ -325,9 +284,6 @@
             // 
             // button_del
             // 
-            this.button_del.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_del.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button_del.BackgroundImage")));
             this.button_del.Location = new System.Drawing.Point(200, 154);
             this.button_del.Name = "button_del";
@@ -338,9 +294,6 @@
             // 
             // button_CE
             // 
-            this.button_CE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_CE.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_CE.Location = new System.Drawing.Point(106, 154);
             this.button_CE.Name = "button_CE";
@@ -352,9 +305,6 @@
             // 
             // button_div
             // 
-            this.button_div.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_div.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_div.Location = new System.Drawing.Point(297, 154);
             this.button_div.Name = "button_div";
@@ -366,9 +316,6 @@
             // 
             // button_mult
             // 
-            this.button_mult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_mult.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_mult.Location = new System.Drawing.Point(297, 231);
             this.button_mult.Name = "button_mult";
@@ -386,34 +333,12 @@
             this.label_Temp.Size = new System.Drawing.Size(0, 13);
             this.label_Temp.TabIndex = 35;
             // 
-            // listView_history
-            // 
-            this.listView_history.BackColor = System.Drawing.Color.Lavender;
-            this.listView_history.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.listView_history.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.listView_history.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.listView_history.HideSelection = false;
-            this.listView_history.Location = new System.Drawing.Point(399, 29);
-            this.listView_history.Name = "listView_history";
-            this.listView_history.OwnerDraw = true;
-            this.listView_history.Size = new System.Drawing.Size(284, 520);
-            this.listView_history.TabIndex = 36;
-            this.listView_history.UseCompatibleStateImageBehavior = false;
-            this.listView_history.View = System.Windows.Forms.View.List;
-            this.listView_history.DrawItem += new System.Windows.Forms.DrawListViewItemEventHandler(this.listView_history_DrawItem);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Width = 280;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(706, 561);
-            this.Controls.Add(this.listView_history);
+            this.ClientSize = new System.Drawing.Size(389, 561);
             this.Controls.Add(this.label_Temp);
             this.Controls.Add(this.button_mult);
             this.Controls.Add(this.button_div);
@@ -475,8 +400,6 @@
         private System.Windows.Forms.Button button_div;
         private System.Windows.Forms.Button button_mult;
         private System.Windows.Forms.Label label_Temp;
-        private System.Windows.Forms.ListView listView_history;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
 

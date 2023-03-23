@@ -19,7 +19,7 @@ namespace Kalkulator_Michal_Wesolowski
             bool no_zero = false;
             foreach (char c in strings[1])
             {
-                if(c != '0')
+                if (c != '0')
                 {
                     no_zero = true;
                     break;
@@ -112,8 +112,9 @@ namespace Kalkulator_Michal_Wesolowski
             }
             String[] strs = s.Split(',');
             normalize_front(ref strs[0]);
-            normalize_back(ref strs[1]);
-            if (strs[1].Equals("NO_BACK")) s = minus ? "-" + strs[0] : strs[0];
+            if (strs.Length > 1)
+                normalize_back(ref strs[1]);
+            if (strs.Length == 1 || strs[1].Equals("NO_BACK")) s = minus ? "-" + strs[0] : strs[0];
             else s = minus ? "-" + strs[0] + "," + strs[1] : strs[0] + "," + strs[1];
 
         }
@@ -238,6 +239,78 @@ namespace Kalkulator_Michal_Wesolowski
             product = product.Insert((int)(product.Length - ptrs.Item1 - ptrs.Item2), ",");
             normalize(ref product);
             return plus ? product : "-" + product;
+        }
+
+        public static String divide(String a, String b)
+        {
+            if (b.Equals("0")) return "Division by 0 error";
+            if (a.Equals("0")) return "0";
+            if (b.Equals("1")) return a;
+            bool plus = false;
+            if (a[0] == '-' && b[0] == '-')
+            {
+                plus = true;
+                a = a.Substring(1);
+                b = b.Substring(1);
+            }
+            else if (a[0] != '-' && b[0] != '-') plus = true;
+            else if (a[0] == '-') a = a.Substring(1);
+            else if (b[0] == '-') b = b.Substring(1);
+            Tuple<uint, uint> ptrs = get_simple_ptrs(ref a, ref b);
+            normalize(ref a);
+            normalize(ref b);
+            if (b.Equals("1")) return a;
+
+            String res = "";
+            int n = a.Length, m = b.Length;
+            String temp = a[0].ToString();
+            const int precision = 31;
+            int id = 0, prec = 0;
+            bool comma = false;
+            while (prec < precision)
+            {
+                prec = comma ? prec + 1 : prec;
+                if (smaller(ref temp, ref b))
+                {
+                    if (id + 1 < n)
+                    {
+                        temp += a[++id].ToString();
+                    }
+                    else
+                    {
+                        if (!comma)
+                        {
+                            res += res.Length == 0 ? "0," : ",";
+                            comma = true;
+                        }
+                        temp += "0";
+                        if (smaller(ref temp, ref b)) res += "0";
+
+                    }
+                }
+                else
+                {
+                    int mu = 2;
+                    String mult = multiply(b, "2");
+                    while (smaller(ref mult, ref temp))
+                    {
+                        mult = multiply(b, (++mu).ToString());
+                    }
+                    if (mult.Equals(temp))
+                    {
+                        res += mu.ToString();
+                    }
+                    else
+                    {
+                        res += (mu - 1).ToString();
+                        mu--;
+                    }
+                    temp = substract(temp, multiply(b, mu.ToString()));
+                }
+                if (temp.Equals("0") && id == a.Length-1) break;
+            }
+            return plus ? res : "-" + res;
+
         }
     }
 }
